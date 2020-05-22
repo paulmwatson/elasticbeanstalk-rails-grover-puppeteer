@@ -1,0 +1,18 @@
+<nav class="navbar has-background-transparent is-padding-1-5em is-fixed-top">
+  <div class="box is-padding-0-5em is-width-100percent" data-turbolinks-animate-persist="true">
+    <form>
+      <input class="input" type="url" placeholder="Enter a URL" value="<%= @url %>" name="url" required autofocus>
+    </form>
+  </div>
+</nav>
+<%- if @image -%>
+<section class="section">
+  <div class="columns is-centered has-text-white">
+    <div class="column is-two-thirds">
+      <figure class="image is-rounded is-overflow-hidden has-box-shadow">
+        <%= image_tag "data:image/png;base64,#{@image.html_safe}" %>
+      </figure>
+    </div>
+  </div>
+</section>
+<%- end -%>
