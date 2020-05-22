@@ -28,6 +28,7 @@ group :development do
   gem 'listen', '~> 3.2'
   gem 'rubocop'
   gem 'reek'
+  gem 'rubocop-rails', require: false
 end
 
 group :test do
